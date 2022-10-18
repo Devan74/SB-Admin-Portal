@@ -9,6 +9,9 @@ import Dashboard from './Dashboard';
 import User from './User';
 import Footer from './Footer';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Usercreate from './Usercreate';
+import ViewUser from './ViewUser';
+import Edituser from './Edituser';
 
 
 function App() {
@@ -20,8 +23,11 @@ function App() {
         <div id="content">
           <Topbar />
           <Routes>
-            <Route path="/dashboard" element={<Dashboard/>}>   </Route>
-            <Route path="/users" element={<User/>}>   </Route>
+            <Route path="/dashboard" element={<Dashboard/>}></Route>
+            <Route path="/users" element={<User/>}></Route>
+            <Route path="/user_create" element={<Usercreate/>}></Route>
+            <Route path="/users/:id" element={<ViewUser/>}></Route>
+            <Route path="/edit/:id" element={<Edituser/>}></Route>
           </Routes>
           
           

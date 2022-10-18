@@ -19,6 +19,7 @@ function Card() {
                 </div>
             </div>
         </div >
+        
     )
 }
 
