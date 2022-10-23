@@ -1,22 +1,36 @@
 import React from 'react'
 
-function Edituser() {
+function Editstudent() {
     return (
         <div class="container">
             <div className='row'>
                 <div className='col-lg-6'>
                     <div className='form-group'>
-                        <label>Username</label>
+                        <label>Student Name</label>
                         <input type={"text"} className="form-control" ></input>
                     </div>
                 </div>
                 <div className='col-lg-6'>
                     <div className='form-group'>
-                        <label>Email</label>
-                        <input type={"Email"} className="form-control" ></input>
+                        <label>Roll Number</label>
+                        <input type={"number"} className="form-control" ></input>
                     </div>
                 </div>
-                <div className='col-lg-4'>
+                <div className='col-lg-3'>
+                    <div className='form-group'>
+                        <label>Department</label>
+                        <select className="form-control">
+                            <option>Web Developer</option>
+                            <option>Java Developer</option>
+                            <option>React Developer</option>
+                            <option>Python Developer</option>
+                            <option>Mern Stack Developer</option>
+                        </select>
+
+                    </div>
+
+                </div>
+                <div className='col-lg-3'>
                     <div className='form-group'>
                         <label>Country</label>
                         <select className="form-control">
@@ -28,7 +42,7 @@ function Edituser() {
                     </div>
 
                 </div>
-                <div className='col-lg-4'>
+                <div className='col-lg-3'>
                     <div className='form-group'>
                         <label>State</label>
                         <select className="form-control">
@@ -40,7 +54,7 @@ function Edituser() {
                     </div>
 
                 </div>
-                <div className='col-lg-4'>
+                <div className='col-lg-3'>
                     <div className='form-group'>
                         <label>City</label>
                         <select className="form-control">
@@ -84,4 +98,4 @@ function Edituser() {
     )
 }
 
-export default Edituser
+export default Editstudent

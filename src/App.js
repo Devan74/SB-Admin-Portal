@@ -12,6 +12,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Usercreate from './Usercreate';
 import ViewUser from './ViewUser';
 import Edituser from './Edituser';
+import Student from './student/Student';
+import Viewstudent from './student/Viewstudent';
+import Editstudent from './student/Editstudent';
+import Createstudent from './student/Createstudent';
 
 
 function App() {
@@ -28,6 +32,10 @@ function App() {
             <Route path="/user_create" element={<Usercreate/>}></Route>
             <Route path="/users/:id" element={<ViewUser/>}></Route>
             <Route path="/edit/:id" element={<Edituser/>}></Route>
+            <Route path="/student/Student" element={<Student/>}></Route>
+            <Route path="/student/Student/:rollnumber" element={<Viewstudent/>}></Route>
+            <Route path="/student/edit/:rollnumber" element={<Editstudent/>}></Route>
+            <Route path="/student/create_student" element={<Createstudent/>}></Route>
           </Routes>
           
           
