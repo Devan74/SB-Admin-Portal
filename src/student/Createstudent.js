@@ -21,7 +21,7 @@ function Createstudent() {
             error.name ="Plese Enter a Value"
           }
           if( values.name && (values.name.length <=  2 || values.name.length>15 )){
-            error.name ="Username must be between 3 to 15 Characters"
+            error.name ="Studentname must be between 3 to 15 Characters"
 
           }
           if(values.rollnumber.toString().length!== 8){
@@ -59,7 +59,7 @@ function Createstudent() {
                 <div className='row'>
                     <div className='col-lg-6'>
                         <div className='form-group'>
-                            <label>Student Mame *</label>
+                            <label>Student Name *</label>
                             <input
                                 name="name" 
                                 onChange={formik.handleChange}
